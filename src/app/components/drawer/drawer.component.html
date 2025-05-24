@@ -1,0 +1,35 @@
+<div class="drawer">
+  <input id="drawer-menu" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-side">
+    <label for="drawer-menu" aria-label="close sidebar" class="drawer-overlay"></label>
+    <ul class="menu bg-base-200 text-base-content min-h-full w-80">
+      <h1 class="p-4">Menú Principal</h1>
+      <ul class="menu bg-base-200 rounded-box w-56">
+        <li>
+          <label for="drawer-menu" [routerLink]="['/dashboard/test-component']" routerLinkActive="active">
+            Item 1
+          </label>
+        </li>
+        <li>
+          <details>
+            <summary>Parent</summary>
+            <ul>
+              <li><a>Submenu 1</a></li>
+              <li><a>Submenu 2</a></li>
+              <li>
+                <details>
+                  <summary>Parent</summary>
+                  <ul>
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li><a>Item 3</a></li>
+      </ul>
+    </ul>
+  </div>
+</div>

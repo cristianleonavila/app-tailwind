@@ -8,6 +8,17 @@ export const routes: Routes = [
   },
   {
     path: 'dashboard',
-    loadComponent: () => import('./pages/dashboard/dashboard.component')
+    loadComponent: () => import('./pages/dashboard/dashboard.component'),
+    loadChildren: () => [
+       {
+        path: 'test-component',
+        loadComponent: () => import('./pages/test-component/test-component.component')
+      },
+    ]
+  },
+
+  {
+    path: '**',
+    redirectTo: ''
   }
 ];
