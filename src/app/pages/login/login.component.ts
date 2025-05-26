@@ -6,6 +6,6 @@ import { ThemeSelectorComponent } from "../../shared/components/theme-selector/t
   imports: [ThemeSelectorComponent],
   templateUrl: './login.component.html'
 })
-export class LoginComponent {
+export default class LoginComponent {
 
 }
